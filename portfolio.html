@@ -2,13 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-  <title>Tamara Tangney</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ <title>Bootstrap Basic Portfolio</title>
+  <!-- Boostrap Stylesheet -->
+  
+    <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" media="(max-width: 980px)" href="assets/css/style.css" />
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 
@@ -21,11 +24,13 @@
       <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
       <li role="presentation"><a href="contact.html">Contact</a></li>
       </nav>
-    </ul>
+      </ul>
     </div>
   </header>
 
   <div id="main-container" class="container">
+    <div class="row">
+    <div class="col-xs-12 col-md-8">
     <section class="main-section">
       <h1>Portfolio</h1>
         <div class="work">
@@ -41,10 +46,14 @@
           <h3>Artist</h3>
         </div>
   </section>
+        <!-- class="col-xs-8 col-md-6" -->
+          </div> 
 
-  <section class="sidebar">
-      <div id="connect">
-      <h2>Connct With Me</h2> 
+   <div class="col-xs-4 col-md-4">
+      <section class="sidebar">
+
+        <div id="connect">
+        <h3>Connct With Me</h3> 
       
           <a href = "https://www.linkedin.com/in/tamaractangney/">
           <img class = "icon_Image" src="assets/images/linked_in.png">
@@ -54,6 +63,11 @@
           <img class = "icon_Image" src="assets/images/github-icon.png"></a>
         </div>
     </section>
+    <!-- class="col-md-2" -->
+    </div>
+  <!-- class="row" -->
+  </div>
+  <!-- "main-container" class="container"> -->
   </div>
       
   <footer>
@@ -61,5 +75,10 @@
       <div>Copyright &copy; 2017 Tamara Tangney</div>
     </div>
   </footer>
+  <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </body>
 </html>
